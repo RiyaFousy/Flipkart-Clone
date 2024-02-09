@@ -42,7 +42,7 @@ private	CustomerRepository custRepo;
 public List<Customer>getCustomer(){
 	return custRepo.findAll();
 	}
-@PostMapping
+@PostMapping(value="/signUp",consumes = {"application/json"})
 public String createCustomer(@RequestBody Customer customer) {
 	custRepo.save(customer);
 	return "Sign-up completed";

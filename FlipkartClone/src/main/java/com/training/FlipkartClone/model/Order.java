@@ -24,13 +24,13 @@ private String paymentMode;
 private Date orderDate;
 @Column
 private Date deliveryDate;
-@ManyToOne(cascade=CascadeType.ALL)
-@JoinColumn(name="customer")
-private Customer customer;
-
-@OneToOne
-@JoinColumn(name="product_id ")
-private Product product;
+//@ManyToOne(cascade=CascadeType.ALL)
+//@JoinColumn(name="customer")
+//private Customer customer;
+//
+//@OneToOne
+//@JoinColumn(name="product_id ")
+//private Product product;
 public Order() {
 	super();
 }
